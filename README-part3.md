@@ -13,7 +13,7 @@ Learning how to use [PaaS (Platform as a Service)](https://en.wikipedia.org/wiki
 a developer is useful so that you can test, deploy, and demo web services and apps outside of
 your local development environment.
 
-There are many PaaS options availalbe, from Amazon (AWS Elastic Beanstalk), Google (App Engine),
+There are many PaaS options available, from Amazon (AWS Elastic Beanstalk), Google (App Engine),
 Microsoft (Azure), and others.  We will be using [Heroku](https://www.heroku.com/) because it can
 be used to deploy apps for free, which is ideal for open source testing and prototyping.  Also,
 [Heroku](https://www.heroku.com/) is used by Mozilla to run Thimble in production, so it can also
@@ -43,7 +43,7 @@ This will add a new `dependency` to our `package.json` file.  When I run this co
 }
 ```
 
-Next we need to create a web server using Express that will allow provide an HTTP based API
+Next we need to create a web server using Express that will allow providing an HTTP based API
 for calling our Seneca module's functions.  Let's create a basic server file called `server.js`
 with the following code:
 
@@ -151,7 +151,7 @@ automatically deploy it.  In order for this to work, we need to add some metadat
 Heroku will know what to do with our files.
 
 We'll need a [`Procfile`](https://devcenter.heroku.com/articles/procfile) that
-tells Heroku which command to run when it starts our app.  Create a file a file named `Procfile` (note
+tells Heroku which command to run when it starts our app.  Create a file named `Procfile` (note
 the capital `P` and lack of extension) with the following contents:
 
 ```
@@ -337,7 +337,7 @@ Your new route should work as follows:
 
 * Add a new route `/healthcheck`
 * Use [process.uptime()](https://nodejs.org/api/process.html#process_process_uptime) to deterimine
-the number of seconds that this node.js process has bee running.
+the number of seconds that this node.js process has been running.
 * Return JSON with the server's uptime
 
 For example:
